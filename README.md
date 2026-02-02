@@ -1,72 +1,64 @@
-# <FULL_NAME>
+# Ahmed Ibrahim
 
-<ROLE_TAGLINE>
+Senior AI/ML Engineer • Tech Lead Track | LLM Systems • Document AI • MLOps
 
-- 📍 <CITY, COUNTRY>
-- Building: production-grade LLM apps with measurable quality and latency targets
-- Open to: senior AI/ML, LLM platform, or applied ML roles
+- 📍 Jeddah, Saudi Arabia → Abu Dhabi, UAE (planned around April, TBD)
+- Building production-grade LLM systems with measurable quality (evals) and operational rigor (latency, observability)
+- Open to: senior AI/ML • LLM platform • applied ML • tech lead roles
 
-[Email](mailto:<EMAIL>) · [LinkedIn](<LINKEDIN_URL>) · [Website](<WEBSITE_URL>)
+[Email](mailto:ahmed11elsaeed@gmail.com) · [LinkedIn](https://www.linkedin.com/in/ahmed-ibrahim-b290a2162/)
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-1f6feb?logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.11%2B-1f6feb?logo=python&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Containerized-0db7ed?logo=docker&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-Cloud-232f3e?logo=amazonaws&logoColor=white)
-![CI](https://img.shields.io/badge/CI-Status%20Placeholder-6f42c1)
 
 ![Profile banner](assets/banner.svg)
 
-## What to check first
-1. **RAG API + evaluation** → [`rag-api-eval-starter`](https://github.com/<GITHUB_USERNAME>/rag-api-eval-starter): end-to-end retrieval, eval harness, and quality gates.
-2. **Document AI pipeline** → [`doc-ai-pipeline-starter`](https://github.com/<GITHUB_USERNAME>/doc-ai-pipeline-starter): ingestion, chunking, extraction, and verification for real-world PDFs.
+## Start here
+1. **RAG API + eval harness** → [`rag-api-eval-starter`](https://github.com/aelsaeed/rag-api-eval-starter)  
+   End-to-end retrieval, evaluation-first workflow, and quality gates.
+2. **Document AI pipeline** → [`doc-ai-pipeline-starter`](https://github.com/aelsaeed/doc-ai-pipeline-starter)  
+   Real-world PDF ingestion with OCR fallback, extraction, and validation.
 
 ## Portfolio (6 repos)
 
 | Repo | What it demonstrates | Key features | How to run (1–2 commands) |
 | --- | --- | --- | --- |
-| [`rag-api-eval-starter`](https://github.com/<GITHUB_USERNAME>/rag-api-eval-starter) | RAG API with evaluation-first workflow | Retrieval quality baselines, prompt + context controls, automated evals | `make up` → `make eval` (or `docker compose up` → `python -m evals`) |
-| [`doc-ai-pipeline-starter`](https://github.com/<GITHUB_USERNAME>/doc-ai-pipeline-starter) | Document AI from ingest to verification | OCR pipeline, schema extraction, confidence scoring | `make run` → `make test` (or `python -m pipeline`) |
-| [`mlops-train-register-serve`](https://github.com/<GITHUB_USERNAME>/mlops-train-register-serve) | Model lifecycle with repeatable training | versioned data, model registry, deployable artifact | `make train` → `make serve` (or `python train.py`) |
-| [`otel-microservice-lab`](https://github.com/<GITHUB_USERNAME>/otel-microservice-lab) | Observability in a microservice system | tracing, metrics, log correlation, SLO alerts | `make up` → `make traces` (or `docker compose up`) |
-| [`dagster-gx-pipeline`](https://github.com/<GITHUB_USERNAME>/dagster-gx-pipeline) | Data pipeline with quality gates | orchestration, validation checks, lineage | `make run` → `make test` (or `dagster dev`) |
-| [`llm-serving-gateway-bench`](https://github.com/<GITHUB_USERNAME>/llm-serving-gateway-bench) | LLM serving and gateway performance | rate limiting, routing, load tests, latency stats | `make up` → `make bench` (or `python bench.py`) |
+| [`rag-api-eval-starter`](https://github.com/aelsaeed/rag-api-eval-starter) | RAG API with evaluation-first workflow | Retrieval baselines, prompt + context controls, automated eval reports | `make up` → `make eval` |
+| [`doc-ai-pipeline-starter`](https://github.com/aelsaeed/doc-ai-pipeline-starter) | Document AI from ingest to verification | OCR fallback, schema extraction, confidence scoring + validation | `make run` → `make test` |
+| [`mlops-train-register-serve`](https://github.com/aelsaeed/mlops-train-register-serve) | Model lifecycle with repeatable training | MLflow tracking/registry, scripted promotion, deployable artifact | `make train` → `make serve` |
+| [`otel-microservice-lab`](https://github.com/aelsaeed/otel-microservice-lab) | Observability in a microservice system | traces + metrics + structured logs, dashboards, SLO-minded instrumentation | `make up` |
+| [`dagster-gx-pipeline`](https://github.com/aelsaeed/dagster-gx-pipeline) | Data pipeline with quality gates | Dagster assets + lineage, GX expectations/checkpoints | `make dev` |
+| [`llm-serving-gateway-bench`](https://github.com/aelsaeed/llm-serving-gateway-bench) | LLM serving and gateway performance | rate limiting, caching, load tests, latency/throughput reporting | `make up` → `make bench` |
 
-## Architecture snapshots
+<details>
+  <summary><strong>Architecture snapshots</strong></summary>
 
-![RAG architecture](assets/architecture-rag.svg)
-![DocAI architecture](assets/architecture-docai.svg)
+  ![RAG architecture](assets/architecture-rag.svg)
+  ![DocAI architecture](assets/architecture-docai.svg)
+</details>
 
 ## Private work note
 Most of my employer work is private or under NDA. These public repos are representative samples that emphasize production constraints: evaluation, reproducibility, and observability in real systems.
 
 ## Engineering principles
 - Measure quality with explicit evals before optimizing prompts or models.
-- Make builds reproducible: pinned deps, one-command setup, deterministic configs.
+- Make builds reproducible: pinned deps, one-command setup, deterministic configs where practical.
 - Prefer simple, testable interfaces over clever abstractions.
 - Bake in observability: traces, metrics, and structured logs from day one.
 - Treat security as a default: secrets hygiene and least-privilege configs.
 - Automate the boring parts with CI and quality gates.
 
 ## Tech stack
-- **LLM/RAG:** OpenAI/Anthropic APIs, vector DBs, rerankers, eval harnesses
-- **MLOps:** MLflow, model registries, CI/CD, containerized training
+- **LLM/RAG:** LLM APIs, vector DBs, rerankers, eval harnesses
+- **MLOps:** MLflow, model registries, CI/CD, containerized training/inference
 - **Data:** Dagster, Great Expectations, DuckDB, Postgres
 - **Backend:** FastAPI, gRPC, Python services
 - **Observability:** OpenTelemetry, Prometheus, Grafana
 - **Cloud:** AWS, Docker, Terraform
 
-<!--
-## GitHub stats
-- Add stats cards here.
-
-## Talks / writing
-- Add talks, posts, or papers here.
-
-## Open-source contributions
-- Add notable PRs or repos here.
--->
-
 ## Pinning suggestion
-Pin these repos in order for a coherent story:
+Pin these repos in this order:
 1. `rag-api-eval-starter`
 2. `doc-ai-pipeline-starter`
 3. `mlops-train-register-serve`
