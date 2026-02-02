@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="RAG architecture">
+  <defs>
+    <style>
+      .box { fill: #f8fafc; stroke: #1e293b; stroke-width: 2; rx: 10; }
+      .text { font-family: Inter, Arial, sans-serif; font-size: 14px; fill: #0f172a; }
+      .arrow { stroke: #1d4ed8; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1d4ed8" />
+    </marker>
+  </defs>
+  <rect x="40" y="40" width="180" height="60" class="box" />
+  <text x="70" y="75" class="text">User / Client</text>
+
+  <rect x="260" y="40" width="200" height="60" class="box" />
+  <text x="285" y="75" class="text">API Gateway</text>
+
+  <rect x="500" y="40" width="200" height="60" class="box" />
+  <text x="520" y="75" class="text">Retriever</text>
+
+  <rect x="500" y="160" width="200" height="60" class="box" />
+  <text x="535" y="195" class="text">Vector Store</text>
+
+  <rect x="740" y="40" width="140" height="60" class="box" />
+  <text x="760" y="75" class="text">LLM</text>
+
+  <rect x="260" y="160" width="200" height="60" class="box" />
+  <text x="290" y="195" class="text">Eval + QA</text>
+
+  <path d="M220 70 H260" class="arrow" />
+  <path d="M460 70 H500" class="arrow" />
+  <path d="M700 70 H740" class="arrow" />
+  <path d="M600 100 V160" class="arrow" />
+  <path d="M460 190 H500" class="arrow" />
+  <path d="M360 100 V160" class="arrow" />
+</svg>
