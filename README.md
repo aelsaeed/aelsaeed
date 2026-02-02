@@ -12,7 +12,7 @@ Senior AI/ML Engineer • Tech Lead Track | LLM Systems • Document AI • MLOp
 ![Docker](https://img.shields.io/badge/Docker-Containerized-0db7ed?logo=docker&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-Cloud-232f3e?logo=amazonaws&logoColor=white)
 
-![Profile banner](<img src="assets/banner.svg" alt="Profile banner" width="100%" />
+![Profile banner]<img src="assets/banner.svg" alt="Profile banner" width="100%" />
 )
 
 ## Start here
